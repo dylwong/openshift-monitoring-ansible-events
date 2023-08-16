@@ -1,19 +1,14 @@
-- name: Elastic events
+- name: Prometheus metrics
   hosts: localhost
   sources:
-    - cloin.eda.elastic:
-        elastic_host: elasticsearch
-        elastic_port: 9200
-        elastic_username: elastic
-        elastic_password: elastic!
-        elastic_index_pattern: filebeat-*
-        query: |
-          term:
-            container.name.keyword: nginx
+    - cloin.eda.prometheus:
+        prometheus_host: prometheus
+        prometheus_port: 9090
+        query: "up"
         interval: 5
 
   rules:
-    - name: Debug event
-      condition: event.ecs is defined and event.nginx.log_level == "error"
+    - name: Debug metric
+      condition: metric.resultType == "vector" and metric.up == 0
       action:
         debug:
