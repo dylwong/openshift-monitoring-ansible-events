@@ -1,0 +1,7 @@
+{'metric': 'rebaca_smart_editor_builds_total', 'value': 35, 'timestamp': 1660396524.673953}
+{'metric': 'rebaca_smart_editor_errors_total', 'value': 2, 'timestamp': 1660396524.673953}
+{'metric': 'rebaca_smart_editor_builds_total', 'value': 38, 'timestamp': 1660396534.673953}
+{'metric': 'rebaca_smart_editor_errors_total', 'value': 1, 'timestamp': 1660396534.673953}
+{'metric': 'rebaca_smart_editor_builds_total', 'value': 42, 'timestamp': 1660396544.673953}
+{'metric': 'rebaca_smart_editor_errors_total', 'value': 3, 'timestamp': 1660396544.673953}
+...
